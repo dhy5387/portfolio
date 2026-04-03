@@ -4,19 +4,35 @@ import './App.css'
 const FIELD_SKILLS = {
   '설비 운영': {
     icon: '⚙️',
-    desc: 'B사 현장 반도체 설비에서 반도체 Attach 설비 관련 공정 촬영 장비 정비 및 설비 유지관리 등을 담당하였습니다.',
+    desc: [
+      'B사 현장 반도체 설비에서 근무',
+      '반도체 Attach 설비 관련 공정 촬영 장비 정비 담당',
+      '설비 유지관리 및 이상 발생 시 원인 분석·조치',
+    ],
   },
   '데이터 모니터링': {
     icon: '📊',
-    desc: '설비에서 생산된 제품을 바탕으로 Rotation 측정, Tilt 측정, Thick 측정 등 다양한 데이터값을 산출하여 제품 품질 관리를 서포팅하였습니다.',
+    desc: [
+      '설비에서 생산된 제품 데이터 수집 및 관리',
+      'Rotation 측정, Tilt 측정, Thick 측정 등 수행',
+      '다양한 데이터값을 산출하여 제품 품질 관리 서포팅',
+    ],
   },
   '공정 분석': {
     icon: '📋',
-    desc: '공정 내 신입사원들을 위한 설비 가이드 및 안내 포트폴리오를 제작하여 빠른 공정 적응과 생산성 향상에 기여하였습니다.',
+    desc: [
+      '공정 내 신입사원 대상 설비 가이드 제작',
+      '설비 안내 포트폴리오 작성 및 배포',
+      '빠른 공정 적응 지원으로 생산성 향상에 기여',
+    ],
   },
   '팀 관리': {
     icon: '🤝',
-    desc: '설비 관리와 동시에 담당 설비의 생산 담당 사원들을 격려하고 팀워크를 이루기 위해 노력하며, 화목한 사내 분위기 조성에 앞장섰습니다.',
+    desc: [
+      '설비 관리와 동시에 생산 담당 사원 관리',
+      '팀원 격려 및 팀워크 강화를 위한 적극적 소통',
+      '화목한 사내 분위기 조성에 앞장섬',
+    ],
   },
 }
 
@@ -29,7 +45,9 @@ function SkillModal({ skill, onClose }) {
         <button className="modal-close" onClick={onClose}>✕</button>
         <div className="modal-icon">{info.icon}</div>
         <h3 className="modal-title">{skill}</h3>
-        <p className="modal-desc">{info.desc}</p>
+        <ul className="modal-desc">
+          {info.desc.map((line, i) => <li key={i}>{line}</li>)}
+        </ul>
       </div>
     </div>
   )
