@@ -106,6 +106,19 @@ function App() {
               </ul>
             </div>
           </div>
+          <div className="timeline-item">
+            <div className="timeline-dot" />
+            <div className="timeline-card">
+              <div className="timeline-header">
+                <span className="company">2026 화성시 대학(원)생 공모전</span>
+                <span className="period">2026</span>
+              </div>
+              <p className="role">AI 서비스 개발 및 데이터 분석 공모전 참여</p>
+              <ul className="timeline-desc">
+                <li>화성시 주관 대학(원)생 대상 AI 서비스 개발 및 데이터 분석 공모전 참여</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
