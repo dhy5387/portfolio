@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import profileImg from './assets/면접사진.jpg'
 import './App.css'
 
 const FIELD_SKILLS = {
@@ -82,7 +83,9 @@ function App() {
             <a href="#contact" className="btn btn-outline">연락하기</a>
           </div>
         </div>
-        <div className="hero-avatar">KH</div>
+        <div className="hero-avatar">
+          <img src={profileImg} alt="김경환" />
+        </div>
       </section>
 
       {/* 경력 */}
