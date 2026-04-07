@@ -73,12 +73,9 @@ function App() {
       {/* 히어로 */}
       <section className="hero" id="about">
         <div className="hero-content">
-          <p className="hero-sub">안녕하세요 👋</p>
-          <h1 className="hero-title">김경환입니다</h1>
+          <h1 className="hero-title">김경환</h1>
           <p className="hero-desc">
-            데이터과학부에서 데이터 분석과 개발을 공부하고 있습니다.<br />
-            LG이노텍에서 설비 운영 경험을 바탕으로<br />
-            현장과 데이터를 잇는 개발자를 목표로 합니다.
+            현장과 학문으로 쌓인 경험을 바탕으로 최선을 다하겠습니다!
           </p>
           <div className="hero-btns">
             <a href="#experience" className="btn btn-primary">경력 보기</a>
