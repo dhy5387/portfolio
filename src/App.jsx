@@ -179,7 +179,7 @@ function App() {
         <p className="contact-desc">협업 제안이나 궁금한 점이 있으시면 편하게 연락주세요.</p>
         <form
           className="contact-form"
-          action="https://formspree.io/f/mzdkeag"
+          action="https://formspree.io/f/mzdkeagl"
           method="POST"
           onSubmit={async (e) => {
             e.preventDefault()
