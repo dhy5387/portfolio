@@ -4,12 +4,12 @@
 :root {
   --primary: #6366f1;
   --primary-dark: #4f46e5;
-  --bg: #0a0a14;
-  --bg2: #11111f;
-  --card: #181828;
+  --bg: #1a1a2e;
+  --bg2: #1f1f35;
+  --card: #26263d;
   --text: #e2e8f0;
-  --muted: #94a3b8;
-  --border: #1e1e36;
+  --muted: #a0aec0;
+  --border: #2d2d4e;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -93,6 +93,9 @@ ul { list-style: none; padding: 0; }
 .timeline-desc { display: flex; flex-direction: column; gap: 6px; }
 .timeline-desc li { font-size: 14px; color: var(--muted); padding-left: 16px; position: relative; }
 .timeline-desc li::before { content: '·'; position: absolute; left: 0; color: var(--primary); }
+
+/* ── 자격증 ── */
+.cert-empty { font-size: 14px; color: var(--muted); }
 
 /* ── 기술 스택 ── */
 .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }

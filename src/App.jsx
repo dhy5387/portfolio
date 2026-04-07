@@ -64,6 +64,7 @@ function App() {
         <ul className="nav-links">
           <li><a href="#about">소개</a></li>
           <li><a href="#experience">경력</a></li>
+          <li><a href="#certifications">자격증</a></li>
           <li><a href="#skills">기술</a></li>
           <li><a href="#contact">연락처</a></li>
         </ul>
@@ -120,6 +121,12 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* 자격증 */}
+      <section className="section" id="certifications">
+        <h2 className="section-title">자격증</h2>
+        <p className="cert-empty">자격증 정보를 준비 중입니다.</p>
       </section>
 
       {/* 기술 스택 */}
